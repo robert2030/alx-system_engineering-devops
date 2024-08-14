@@ -1,0 +1,7 @@
+[34m
+* Datadog Agent 7 install script v1.33.0
+[0m
+/bin/systemctl
+[34m
+* Installing apt-transport-https, curl and gnupg
+[0m
