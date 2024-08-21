@@ -1,3 +1,12 @@
-#!/usr/bin/env bash
-# Create an RSA key pair
-ssh-keygen -b 4096 -f school -N betty
+#!/bin/bash
+
+# Generate RSA key pair with the specified requirements
+ssh-keygen -t rsa -b 4096 -f school -N betty
+
+# Check if the files were created
+if [ -f school ] && [ -f school.pub ]; then
+    echo "Key pair successfully generated."
+    ls -l school school.pub
+else
+    echo "Error generating key pair."
+fi
