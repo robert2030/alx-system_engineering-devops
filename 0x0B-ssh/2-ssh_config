@@ -1,10 +1,8 @@
-root@a91cd45378f7:/practice/alx-system_engineering-devops/0x0B-ssh# cat 2-ssh_config
-# ssh config file
-Include /etc/ssh/ssh_config.d/*.conf
-Host *
-      PasswordAuthentication no
-      IdentifyFile ~/.ssh/school
-      PubkeyAuthentication yes
-    SendEnv LANG LC_*
-    HashKnownHosts yes
-    GSSAPIAuthentication yes
+#!/usr/bin/env bash
+#client config file
+
+host 100.24.255.166
+    port 22
+    username ubuntu
+    identityfile ~/.ssh/school
+    passwordauthentication no
