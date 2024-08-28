@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Configures Nginx to serve the AirBnB_clone_v3 API.
 
 server {
@@ -6,10 +7,10 @@ server {
     listen      [::]:80 default_server ipv6only=on;
 
     # Use server IP as domain name
-    server_name 104.196.168.90;
+    server_name 54.208.160.39;
 
     # Customize HTTP response header
-    add_header  X-Served-By 375-web-01;
+    add_header  X-Served-By 169372-web-02;
 
     # Serve /airbnb-onepage/ route on AirBnB_clone_v3
     location = /airbnb-onepage/ {
